@@ -1,5 +1,5 @@
 # Your project's server will run on localhost:xxxx at this port
-PORT: 8000
+PORT: 8888
 
 # Autoprefixer will make sure your CSS works with these browsers
 COMPATIBILITY:
@@ -22,11 +22,15 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
-    - "!src/assets/{img,js,scss}/**/*"
+    - "!src/assets/{img,js,scss,fonts}/**/*"
+  fonts:
+    - "src/assets/fonts/*"
+    - "bower_components/font-awesome/fonts/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
+    - "bower_components/font-awesome/scss"
   # Paths to JavaScript libraries, which are combined into one file
   # TODO:  Rework this using webpack build. Right now just verifying the files are being built properly
   entries:

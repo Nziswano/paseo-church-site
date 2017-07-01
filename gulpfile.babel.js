@@ -29,7 +29,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, images, fonts, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -106,7 +106,7 @@ let webpackConfig = {
       ]
     }
   ]
-}
+};
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
@@ -131,6 +131,12 @@ function images() {
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
+//Copy fonts to "dist" folder
+function fonts() {
+    return gulp.src(PATHS.fonts)
+        .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
+}
+
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
@@ -153,5 +159,6 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+    gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
