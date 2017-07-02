@@ -1,2 +1,10 @@
-<h1>We start again</h1>
-<img id="elem-id" src="~imgin-loader/img.in?size=640x480&bg=ff8888&text=My%20Image">
+<div class="grid-x"><div class="cell">{{>topbar-responsive title=paseo.title}}</div></div>
+<div class="grid-x">
+    <div class="cell">{{>fullscreen-image-slider slides=paseo.events}}</div>
+</div>
+<div class="grid-x"><div class="cell">{{>marketing-site-features
+    feature-headline=paseo.feature.headline
+    feature-subheader=paseo.feature.subheader services=paseo.services}}</div></div>
+<div class="grid-x"><div class="cell">{{>full-width-testimonial quote=paseo.quote}}</div></div>
+<div class="grid-x"><div class="cell">{{>marketing-site-content-section}}</div></div>
+<div class="grid-x"><div class="cell">{{>marketing-site-footer}}</div></div>
