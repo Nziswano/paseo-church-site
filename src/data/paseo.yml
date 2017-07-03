@@ -5,6 +5,10 @@ feature:
   subheader: 10h00
 services:
   -
+    title: Sunday Service
+    day: Sunday
+    time: 10h00
+  -
     title: Bible Study
     day: Sunday
     time: 9h00
@@ -13,35 +17,27 @@ services:
     day: Sunday
     time: 9h00
   -
-    title: Choir Practice
-    day: Wednesday
-    time: 18h00
-  -
     title: Prayer Meeting
     day: Wednesday
     time: 19h00
-  -
-    title: Youth
-    day: Friday
-    time: 18h00
 other-services:
   -
     title: Women's Group
-    img: https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb
+    img: "/assets/img/womens_group2.jpg"
   -
     title: Men's Group
-    img: https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb
+    img: "/assets/img/mens_group.jpg"
   -
     title: Marriage Enrichment
-    img: https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb
+    img: "/assets/img/couple_enrichment2.jpg"
 events:
   -
     title: "Career Expo"
     date: "Saturday, 8 July 2017"
     time: "10h00 - 12h00"
-    img: "https://i.imgur.com/JD4Caxa.jpg"
+    img: "/assets/img/church_side.jpg"
   -
     title: "Vacation Bible School"
     date: "10 July 2017 - 15 July 2017"
     time: "10h00"
-    img: "https://i.imgur.com/JD4Caxa.jpg"
+    img: "/assets/img/church_with_sky.jpg"

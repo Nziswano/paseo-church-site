@@ -1,10 +1,65 @@
-<div class="grid-x"><div class="cell">{{>topbar-responsive title=paseo.title}}</div></div>
-<div class="grid-x">
-    <div class="cell">{{>fullscreen-image-slider slides=paseo.events}}</div>
-</div>
-<div class="grid-x"><div class="cell">{{>marketing-site-features
-    feature-headline=paseo.feature.headline
-    feature-subheader=paseo.feature.subheader services=paseo.services}}</div></div>
-<div class="grid-x"><div class="cell">{{>full-width-testimonial quote=paseo.quote}}</div></div>
-<div class="grid-x"><div class="cell">{{>marketing-site-content-section}}</div></div>
-<div class="grid-x"><div class="cell">{{>marketing-site-footer title=paseo.title}}</div></div>
+<section class="grid-container">
+    <section class="grid-x">
+        <div class="cell">
+            {{>topbar-responsive title=paseo.title}}
+        </div>
+        <section class="cell module content">
+            <div class="container">
+                {{>marketing-site-hero}}
+            </div>
+        </section>
+
+        <section id="services" class="cell module parallax parallax-2">
+            <div class="container">
+                <h1>Services</h1>
+            </div>
+        </section>
+        <section class="cell module content">
+            <div class="container">
+                {{>marketing-site-features feature-headline=paseo.title
+                feature-subheader=paseo.quote services=paseo.services}}
+            </div>
+            <section id="events" class="cell module parallax parallax-3">
+                <div class="container">
+                    <h1>Events</h1>
+                </div>
+            </section>
+            <section class="cell module content">
+                <div class="container">
+                    {{>fullscreen-image-slider slides=paseo.events}}
+                </div>
+            </section>
+        </section>
+        <section id="about" class="cell module parallax parallax-4">
+            <div class="container">
+                <h1>About</h1>
+            </div>
+        </section>
+        <section class="module content">
+            <div class="container grid-x">
+                <div class="cell small-3">
+                {{>card-flex-article}}
+                </div>
+                <div class="cell small-3">
+                    {{>card-flex-article}}
+                </div>
+                <div class="cell small-3">
+                    {{>card-flex-article}}
+                </div>
+                <div class="cell small-3">
+                    {{>card-flex-article}}
+                </div>
+            </div>
+        </section>
+        <section class="cell module parallax parallax-1">
+            <div class="container">
+                <h1>About</h1>
+            </div>
+        </section>
+        <section class="cell module content">
+            <div class="container">
+                {{>marketing-site-footer title=paseo.title}}
+            </div>
+        </section>
+    </section>
+</section>
