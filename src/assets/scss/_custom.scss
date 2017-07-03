@@ -6,6 +6,9 @@ $font-londrina: 'Londrina', sans-serif;
 
 $body-font-family: $font-hind;
 
+//.orbit {
+//  height:20vh;
+//}
 
 //.container {
 //  max-width: 960px;
@@ -44,7 +47,7 @@ section.module.parallax {
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
-  //line-height: 200px;
+  line-height: 200px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -52,14 +55,14 @@ section.module.parallax h1 {
   margin-bottom: 0px;
 }
 section.module.parallax-1 {
-  background-image: url("/assets/img/playground.jpg");
+  background-image: url("/assets/img/bg/church_side.jpg");
 }
 section.module.parallax-2 {
-  background-image: url("/assets/img/church_sign.jpg");
+  background-image: url("/assets/img/bg/church_sign.jpg");
 }
 section.module.parallax-3 {
-  background-image: url("/assets/img/building_flower.jpg");
+  background-image: url("/assets/img/bg/building_flower.jpg");
 }
 section.module.parallax-4 {
-  background-image: url("/assets/img/fog_pict.jpg");
+  background-image: url("/assets/img/bg/fog_pict.jpg");
 }
