@@ -48,6 +48,12 @@ $body-font-family: $font-hind;
    }
  }
 
+ .module .fa {
+   font-size: 3rem;
+   color: #1779ba;
+   margin-bottom: 1rem;
+ }
+
 
 
 //.orbit {
@@ -86,7 +92,8 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  border-top: groove;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);

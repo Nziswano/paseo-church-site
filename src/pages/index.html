@@ -1,64 +1,63 @@
 ---
 site:
 ---
-<section class="grid-container">
-    <section class="grid-x">
+<section class="page-container">
+    <section id="home" class="grid-x">
         <div class="cell">
             {{>paseo-topbar-responsive title=paseo.title}}
         </div>
+
         <section class="cell module content">
             <div class="container">
                 {{>marketing-site-hero}}
             </div>
         </section>
 
-        <section id="services" class="cell module parallax parallax-2">
+        <!--<section class="cell module parallax parallax-2">-->
+            <!--<div class="container">-->
+                <!--<blockquote>For all have sinned and come short of the glory of God <cite>Romans 3:23</cite></blockquote>-->
+            <!--</div>-->
+        <!--</section>-->
+
+        <section id="services" class="cell module content">
             <div class="container">
-                <blockquote>"Believe on the Lord Jesus Christ and thou shalt be saved" <cite>Acts 16:31</cite></blockquote>
+                {{>paseo-four-up-feature title=paseo.sundayservice.title day=paseo.sundayservice.day
+                time=paseo.sundayservice.time services=paseo.services}}
+            </div>
+            <div class="container">
+                <!--{{>marketing-site-three-up}}-->
             </div>
         </section>
-        <section class="cell module content">
+        <section class="cell module parallax parallax-3">
             <div class="container">
-                {{>marketing-site-features feature-headline=paseo.title
-                feature-subheader=paseo.quote services=paseo.services}}
-            </div>
-            <section id="events" class="cell module parallax parallax-3">
-                <div class="container">
-                    <h1>Events</h1>
-                </div>
-            </section>
-            <section class="cell module content">
-                <div class="container">
-                    {{>fullscreen-image-slider slides=paseo.events}}
-                </div>
-            </section>
-        </section>
-        <section id="about" class="cell module parallax parallax-4">
-            <div class="container">
-                <h1>About</h1>
+                <blockquote>For by grace are ye saved through faith, and that not of yourselves; it is the gift
+                    of God; not of works lest any many should boast. <cite>Ephesians 2:8,9</cite></blockquote>
             </div>
         </section>
-        <section class="module content">
+
+        <section id="events" class="cell module content">
+            <div class="container">
+                {{>fullscreen-image-slider slides=paseo.events}}
+            </div>
+        </section>
+
+        <section class="cell module parallax parallax-1">
+            <div class="container">
+                <blockquote>God so loved the world that He gave His only begotten Son, that whoesover believeth in
+                    Him should not perish but have everlasting life. <cite>John 3:16</cite></blockquote>
+            </div>
+        </section>
+
+        <section id="about" class="module content">
             <div class="container grid-x">
-                <div class="cell small-3">
-                {{>card-flex-article}}
-                </div>
-                <div class="cell small-3">
-                    {{>card-flex-article}}
-                </div>
-                <div class="cell small-3">
-                    {{>card-flex-article}}
-                </div>
-                <div class="cell small-3">
-                    {{>card-flex-article}}
-                </div>
+                {{>four-up-feature}}
             </div>
         </section>
         <!--<section class="cell module parallax parallax-1">-->
-            <!--<div class="container">-->
-                <!--&lt;!&ndash;<h1>About</h1>&ndash;&gt;-->
-                <!--&nbsp;-->
-            <!--</div>-->
+        <!--<div class="container">-->
+        <!--&lt;!&ndash;<h1>About</h1>&ndash;&gt;-->
+        <!--&nbsp;-->
+        <!--</div>-->
         <!--</section>-->
         <section class="cell module content">
             <div class="container">

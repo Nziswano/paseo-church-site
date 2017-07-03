@@ -13,20 +13,24 @@ sundayservice:
   time: 10h00
 services:
   -
+    icon: fa-book
     title: Bible Study
     description:
     day: Sunday
     time: 9h00
   -
+    icon: fa-graduation-cap
     title: Sunday School
     description:
     day: Sunday
     time: 9h00
   -
+    icon: fa-music
     title: Choir and Worship Team Practice
     day: Wednesday
     time: 18h00
   -
+    icon: fa-users
     title: Prayer Meeting
     day: Wednesday
     time: 19h00
@@ -34,21 +38,21 @@ other-services:
   -
     title: Youth Group
     description: Meets every Friday at 18h00.
-    img:
+    img: "/assets/img/youth_group.jpg"
     link: info
   -
     title: Women's Group
-    description:
+    description: Meets monthly
     img: "/assets/img/womens_group2.jpg"
     link: info
   -
     title: Men's Group
-    description:
+    description: Meets monthly
     img: "/assets/img/mens_group.jpg"
     link: info
   -
     title: Marriage Enrichment
-    description:
+    description: Meets monthly
     img: "/assets/img/couple_enrichment2.jpg"
     link: info
 events:

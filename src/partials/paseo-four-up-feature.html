@@ -1,0 +1,22 @@
+<section class="four-up-feature">
+  <div class="grid-x four-up-feature-header align-center">
+    <div class="cell">
+      <h2>{{title}}</h2>
+      <h5>{{day}} at {{time}}</h5>
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x align-stretch">
+    {{#each services}}
+    <div class="small-10 medium-3 cell align-self-stretch flex-container">
+      <div class="card">
+      <i class="fa {{icon}}" aria-hidden="true"></i>
+      <h4>{{title}}</h4>
+      <div class="card-section>">
+      <h5>{{day}} at {{time}}</h5>
+      <p class="four-up-feature-text">{{description}}</p>
+      </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</section>
