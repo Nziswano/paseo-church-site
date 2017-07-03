@@ -3,11 +3,11 @@
     <div class="medium-4 columns">
       <h4 class="marketing-site-footer-name">{{title}}</h4>
       <p>{{description}}</p>
-      <ul class="menu marketing-site-footer-menu-social simple">
-        <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-         <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-      </ul>
+      <!--<ul class="menu marketing-site-footer-menu-social simple">-->
+        <!--<li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>-->
+         <!--<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>-->
+         <!--<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>-->
+      <!--</ul>-->
       <div>{{>googlemap}}</div>
     </div>
     <div class="medium-4 columns">
@@ -31,14 +31,21 @@
     </div>
     <div class="medium-4 columns">
       <h4 class="marketing-site-footer-title">Newsletter Signup</h4>
-      <div class="row small-up-3">
-        <div class="input-group">
-          <span class="input-group-label">Email</span>
-          <input class="input-group-field" type="text">
-          <div class="input-group-button">
-            <input type="submit" class="button" value="Submit">
+      <div class="row">
+        <form class="columns">
+          <div class="input-group">
+            <span class="input-group-label"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <input class="input-group-field" type="text" placeholder="email address">
           </div>
-        </div>
+          <input type="submit" class="button" value="Sign-up">
+        </form>
+        <!--<div class="input-group">-->
+          <!--<span class="input-group-label">Email</span>-->
+          <!--<input class="input-group-field" type="text">-->
+          <!--<div class="input-group-button">-->
+            <!--<input type="submit" class="button" value="Submit">-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
     </div>
   </div>
@@ -49,10 +56,10 @@
       </div>
       <div class="column">
         <ul class="menu marketing-site-footer-bottom-links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>

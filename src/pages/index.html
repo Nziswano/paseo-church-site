@@ -13,19 +13,27 @@ site:
             </div>
         </section>
 
-        <!--<section class="cell module parallax parallax-2">-->
-            <!--<div class="container">-->
-                <!--<blockquote>For all have sinned and come short of the glory of God <cite>Romans 3:23</cite></blockquote>-->
-            <!--</div>-->
-        <!--</section>-->
-
         <section id="services" class="cell module content">
             <div class="container">
                 {{>paseo-four-up-feature title=paseo.sundayservice.title day=paseo.sundayservice.day
                 time=paseo.sundayservice.time services=paseo.services}}
             </div>
             <div class="container">
-                <!--{{>marketing-site-three-up}}-->
+                <div class="grid-x grid-margin-x align-stretch">
+                    {{#each paseo.other-services}}
+
+                    <div class="card-flex-article card small-10 medium-3 cell align-self-stretch">
+
+                        <div class="card-section">
+                            <h3 class="article-title">{{title}}</h3>
+                            <p class="article-summary">{{description}}</p>
+                        </div>
+                        <div class="card-image">
+                            <img src="{{img}}" alt="{{title}}">
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
             </div>
         </section>
         <section class="cell module parallax parallax-3">
@@ -48,18 +56,39 @@ site:
             </div>
         </section>
 
-        <section id="about" class="module content">
-            <div class="container grid-x">
-                {{>four-up-feature}}
+        <section id="about" class="cell module content">
+            <div class="container">
+                <div class="grid-x grid-margin-x align-stretch">
+                {{#each paseo.about}}
+                <div class="cell small-6 large-4">
+                    <h4><strong>{{this.title}}</strong></h4>
+                    <ul>
+                        {{#each this.items}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/each}}
+                </div>
+
+                <!--<div class="grid-x">-->
+
+                <!--{{#each paseo.about}}-->
+                    <!--<div class="cell small-6 large-4">-->
+                    <!--<h3>{{title}}</h3>-->
+                    <!--<ul>-->
+                        <!--{{#each items}}-->
+                        <!--<li>{{this}}</li>-->
+                        <!--{{/each}}-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--{{/each}}-->
+
+                <!--</div>-->
             </div>
         </section>
-        <!--<section class="cell module parallax parallax-1">-->
-        <!--<div class="container">-->
-        <!--&lt;!&ndash;<h1>About</h1>&ndash;&gt;-->
-        <!--&nbsp;-->
-        <!--</div>-->
-        <!--</section>-->
-        <section class="cell module content">
+
+        <section id="contact" class="cell module content">
             <div class="container">
                 {{>paseo-marketing-site-footer title=paseo.title phone=paseo.phone location=paseo.location
                 email=paseo.email}}

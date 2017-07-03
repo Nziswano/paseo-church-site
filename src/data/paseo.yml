@@ -70,12 +70,14 @@ events:
     link: vacation-bible-school
 about:
   -
+    id: about-1
     title: "Paseo Baptist is"
     items:
       - "An independent Baptist Church that is fundamental in belief and extensive in missionary activities."
       - "A community church that is prepared to meet the spiritual needs of the people of the community."
       - "Church that is interested in the child, the youth and the adult"
   -
+    id: about-2
     title: "Our Aim"
     items:
       - "To bring glory and honor to God, the Father through Jesus Christ, the only begotten Son of God."
@@ -83,6 +85,7 @@ about:
       Christian ideals and is knowledgeable of the Bible."
       - "To establish worship services with timely and dynamic preaching and an environment of friendliness."
   -
+    id: about-3
     title: "We Believe"
     items:
       - "That the Holy Scriptures are the inspired word of God"
