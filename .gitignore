@@ -94,3 +94,5 @@ Temporary Items
 .idea/
 package-lock.json
 !scss
+
+/vendor/

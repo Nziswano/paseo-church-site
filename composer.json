@@ -1,0 +1,13 @@
+{
+    "name": "catenare/foundation",
+    "description": "Foundation theme for catenare",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan Martin",
+            "email": "martin.johan@johan-martin.com"
+        }
+    ],
+    "require": {}
+}
