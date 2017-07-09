@@ -106,7 +106,7 @@ let webpackConfig = {
       ]
     }
   ]
-};
+}
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
