@@ -96,6 +96,13 @@ function sass() {
 }
 
 let webpackConfig = {
+  devtool: "cheap-eval-source-map",
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
+  },
+  module: {
   rules: [
     {
       test: /.js$/,
@@ -104,8 +111,19 @@ let webpackConfig = {
           loader: 'babel-loader'
         }
       ]
+    },
+    {
+      test: /.vue$/,
+      loader: 'vue-loader',
+      options: {
+        loaders: {
+          'scss': 'vue-style-loader!css-loader!sass-loader',
+          'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+        }
+      }
     }
   ]
+}
 }
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -113,7 +131,7 @@ function javascript() {
   return gulp.src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())
-    .pipe(webpackStream({module: webpackConfig}, webpack2))
+    .pipe(webpackStream(webpackConfig, webpack2))
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))
@@ -140,7 +158,9 @@ function fonts() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
-    server: PATHS.dist, port: PORT
+    server: PATHS.dist, port: PORT,
+    open: false,
+    notify: false
   });
   done();
 }
@@ -158,6 +178,7 @@ function watch() {
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+  gulp.watch('src/assets/js/**/*.vue').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
     gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
