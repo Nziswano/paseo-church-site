@@ -14,7 +14,7 @@ import App from './vue/app.vue';
 
 
 $(document).foundation();
-var vm = new Vue({
-  el: '#email-signup',
-  render: h => h(App)
-})
+// var vm = new Vue({
+//   el: '#email-signup',
+//   render: h => h(App)
+// })
