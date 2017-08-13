@@ -25,12 +25,12 @@ PATHS:
     - "!src/assets/{img,js,scss,fonts}/**/*"
   fonts:
     - "src/assets/fonts/*"
-    - "bower_components/font-awesome/fonts/*"
+    - "node_modules/font-awesome/fonts/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
-    - "bower_components/font-awesome/scss"
+    - "node_modules/font-awesome/scss"
   # Paths to JavaScript libraries, which are combined into one file
   # TODO:  Rework this using webpack build. Right now just verifying the files are being built properly
   entries:

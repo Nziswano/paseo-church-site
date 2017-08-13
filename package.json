@@ -10,9 +10,13 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
+    "awesome-typescript-loader": "^3.2.2",
+    "babel-preset-env": "^1.6.0",
+    "font-awesome": "^4.7.0",
     "foundation-sites": "^6.4.2",
     "jquery": ">=3.0.0",
     "motion-ui": "~1.2.2",
+    "node-sass": "^4.5.3",
     "vue": "^2.4.2",
     "what-input": "^4.1.3"
   },

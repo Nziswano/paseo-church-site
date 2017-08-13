@@ -97,23 +97,34 @@ function sass() {
 
 let webpackConfig = {
   devtool: "cheap-eval-source-map",
-  resolve: {
-    alias: {
-      vue: 'vue/dist/vue.js'
-    }
-  },
   module: {
   rules: [
-    {
-      test: /.js$/,
-      use: [
-        {
-          loader: 'babel-loader'
-        }
-      ]
-    },
+      {
+          test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+              loader: 'babel-loader',
+              options: {
+                  presets: [
+                      ['env',
+                          {
+                              targets: {
+                                  'browsers': ['last 2 versions', 'ie>=7']
+                              }
+                          }
+                      ]
+                  ]
+              }
+          }
+      },
+      {
+          test: /\.ts$/,
+          exclude: /(node_modules|bower_components)/,
+          use: 'awesome-typescript-loader'
+      },
     {
       test: /.vue$/,
+        exclude: /(node_modules|bower_components)/,
       loader: 'vue-loader',
       options: {
         loaders: {

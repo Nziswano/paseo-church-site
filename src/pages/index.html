@@ -6,59 +6,54 @@ site:
         <div class="cell">
             {{>paseo-topbar-responsive title=paseo.title}}
         </div>
+    </section>
 
-        <section class="cell module content">
-            <div class="container">
-                {{>paseo-marketing-site-hero}}
-            </div>
-        </section>
+    <section class="cell module content">
+        <div class="container">
+            {{>paseo-marketing-site-hero}}
+        </div>
+    </section>
 
-        <section id="services" class="cell module content">
-            <div class="container">
-                {{>paseo-four-up-feature title=paseo.sundayservice.title day=paseo.sundayservice.day
-                time=paseo.sundayservice.time services=paseo.services}}
-            </div>
-            <div class="container">
-                <div class="grid-x grid-margin-x align-stretch">
-                    {{#each paseo.other-services}}
+    <section class="cell module parallax parallax-3">
+        <div class="container">
+            <blockquote>For by grace are ye saved through faith, and that not of yourselves; it is the gift
+                of God; not of works lest any many should boast. <cite>Ephesians 2:8,9</cite></blockquote>
+        </div>
+    </section>
 
-                    <div class="card-flex-article card small-10 medium-3 cell align-self-stretch">
+    <section id="services" class="cell module content">
+        <div class="container">
+            {{>paseo-four-up-feature title=paseo.sundayservice.title day=paseo.sundayservice.day
+            time=paseo.sundayservice.time services=paseo.services}}
+        </div>
+        <div class="container">
+            <div class="grid-x grid-margin-x align-stretch">
+                {{#each paseo.other-services}}
 
-                        <div class="card-section">
-                            <h3 class="article-title">{{title}}</h3>
-                            <p class="article-summary">{{description}}</p>
-                        </div>
-                        <div class="card-image">
-                            <img src="{{img}}" alt="{{title}}">
-                        </div>
+                <div class="card-flex-article card small-10 medium-3 cell align-self-stretch">
+
+                    <div class="card-section">
+                        <h3 class="article-title">{{title}}</h3>
+                        <p class="article-summary">{{description}}</p>
                     </div>
-                    {{/each}}
+                    <div class="card-image">
+                        <img src="{{img}}" alt="{{title}}">
+                    </div>
                 </div>
+                {{/each}}
             </div>
-        </section>
-        <section class="cell module parallax parallax-3">
-            <div class="container">
-                <blockquote>For by grace are ye saved through faith, and that not of yourselves; it is the gift
-                    of God; not of works lest any many should boast. <cite>Ephesians 2:8,9</cite></blockquote>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="events" class="cell module content">
-            <div class="container">
-                {{>paseo-events-slider slides=paseo.events}}
-            </div>
-        </section>
+    <!--<section id="events" class="cell module content">-->
+        <!--<div class="container">-->
+            <!--{{>paseo-events-slider slides=paseo.events}}-->
+        <!--</div>-->
+    <!--</section>-->
 
-        <section class="cell module parallax parallax-1">
-            <div class="container">
-                <blockquote>God so loved the world that He gave His only begotten Son, that whoesover believeth in
-                    Him should not perish but have everlasting life. <cite>John 3:16</cite></blockquote>
-            </div>
-        </section>
-
-        <section id="about" class="cell module content">
-            <div class="container">
-                <div class="grid-x grid-margin-x align-stretch">
+    <section id="about" class="cell module content">
+        <div class="container">
+            <div class="grid-x grid-margin-x align-stretch">
                 {{#each paseo.about}}
                 <div class="cell small-6 large-4">
                     <h4><strong>{{this.title}}</strong></h4>
@@ -69,15 +64,22 @@ site:
                     </ul>
                 </div>
                 {{/each}}
-                </div>
             </div>
-        </section>
-
-        <section id="contact" class="cell module content">
-            <div class="container">
-                {{>paseo-marketing-site-footer title=paseo.title phone=paseo.phone location=paseo.location
-                email=paseo.email}}
-            </div>
-        </section>
+        </div>
     </section>
+
+    <section class="cell module parallax parallax-1">
+        <div class="container">
+            <blockquote>God so loved the world that He gave His only begotten Son, that whoesover believeth in
+                Him should not perish but have everlasting life. <cite>John 3:16</cite></blockquote>
+        </div>
+    </section>
+
+    <section id="contact" class="cell module content">
+        <div class="container">
+            {{>paseo-marketing-site-footer title=paseo.title phone=paseo.phone location=paseo.location
+            email=paseo.email}}
+        </div>
+    </section>
+
 </section>
