@@ -79,6 +79,7 @@ section.module.content {
 }
 section.module.parallax {
   //height: 600px;
+  @extend .show-for-medium;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
