@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:400,600|Londrina+Solid');
 
-
 $font-hind: 'Hind', sans-serif;
 $font-londrina: 'Londrina', sans-serif;
 
@@ -14,7 +13,9 @@ $body-font-family: $font-hind;
   font-size: 1.25em;
 }
 
+
 .module .marketing-site-hero-content {
+
   @extend .topbar-responsive-logo;
   margin-left: 45%;
   border-radius: 8px;
@@ -33,6 +34,12 @@ $body-font-family: $font-hind;
   @media screen and (min-width: 40em) {
     padding-left: 2%;
   }
+  
+  @include breakpoint(medium down) {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
 }
  .module blockquote {
    margin-left: auto;
@@ -108,4 +115,14 @@ section.module.parallax-3 {
 }
 section.module.parallax-4 {
   background-image: url("/assets/img/bg/fog_pict.jpg");
+}
+
+.paseo-card {
+  text-align: center;
+  padding: $global-padding;
+}
+
+.feature-main-service {
+  text-align: center;
+  font-weight: $global-weight-bold;
 }
