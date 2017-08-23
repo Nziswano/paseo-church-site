@@ -101,7 +101,6 @@ let webpackConfig = {
   rules: [
       {
           test: /\.js$/,
-          exclude: /(node_modules|bower_components)/,
           use: {
               loader: 'babel-loader',
               options: {
@@ -109,7 +108,7 @@ let webpackConfig = {
                       ['env',
                           {
                               targets: {
-                                  'browsers': ['last 2 versions', 'ie>=7']
+                                  'browsers': ['last 3 versions', 'ie>=7']
                               }
                           }
                       ]
@@ -119,12 +118,10 @@ let webpackConfig = {
       },
       {
           test: /\.ts$/,
-          exclude: /(node_modules|bower_components)/,
           use: 'awesome-typescript-loader'
       },
     {
       test: /.vue$/,
-        exclude: /(node_modules|bower_components)/,
       loader: 'vue-loader',
       options: {
         loaders: {

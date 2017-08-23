@@ -62,10 +62,5 @@
     "url": "https://github.com/zurb/foundation-sites/issues",
     "email": "foundation@zurb.com"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
   "private": true
 }
