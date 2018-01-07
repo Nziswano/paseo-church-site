@@ -1,15 +1,17 @@
 $alpha-color: #fb321c;
 
 // $hero-height: 60vh;
-// $body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$header-font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
-// $font-family-highlight: 'Annie Use Your Telescope', cursive;
+$body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$header-font-family: 'Josefin Sans';
+
 
 .cn-alpha {
     position: relative;
-    border: 2px solid $alpha-color;
-    h1 {
+    font-family: $body-font-family;
+
+    h1, h2 {
       font-family: $header-font-family;
+      color: $alpha-color;
     }
 
     &-button {
@@ -23,23 +25,20 @@ $header-font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-ser
       left: 5%;
     }
 
-    &-header {
-      .button {
-        background-color: $alpha-color;
-      }
-    }
-
     .content {
+      position: relative;
+      top: 5rem;
       text-align: center;
       font-family: $header-font-family;
+      padding-bottom: 5rem;
 
       span {
         font-size: 2rem;
         font-weight: bolder;
-        // color: $alpha-color;
       }
 
       h2 {
+        font-weight: bold;
         font-size: 3rem;
         color: $alpha-color;
       }
@@ -53,14 +52,20 @@ $header-font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-ser
 
       }
 
+    &-header {
+      .button {
+        background-color: $alpha-color;
+      }
+
+    }
+
     &-question {
       text-align: center;
       background-color: $alpha-color;
-      color: $white;
-      border-top: 4px solid $alpha-color;
-      border-bottom: 4px solid $alpha-color;
+      width: 100%;
       h1 {
         font-size: 3rem;
+        color: $white;
       }
     }
 
@@ -83,6 +88,7 @@ $header-font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-ser
     .fa {
       color: $alpha-color;
     }
+    border-top: 2px solid $alpha-color;
   }
 
   .marketing-site-content-section-block {
@@ -97,10 +103,27 @@ $header-font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-ser
   }
 
   .contact-us-section {
+    .contact-us-section-left {
+      border-color: $alpha-color;
+    }
     h1 {
       text-align: center;
       font-weight: bold;
       font-size: 5rem;
       color: $alpha-color;
     }
+    h2 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        font-size: 1rem;
+      }
+    }
+    label {
+      font-weight: bold;
+    }
+    
   }
