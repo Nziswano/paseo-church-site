@@ -15,22 +15,23 @@ $body-font-family: $font-hind;
 
 
 .module .marketing-site-hero-content {
-
+  color: $white;
   @extend .topbar-responsive-logo;
   margin-left: 45%;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.25);
   padding: 5px 10px;
 
-
   h1 {
     font-weight: bold;
     font-size: 2em;
     color: rgba(255,255,255,0.75);
   }
+
   .subheader {
     color: rgba(255,255,255,1);
   }
+
   @media screen and (min-width: 40em) {
     padding-left: 2%;
   }
