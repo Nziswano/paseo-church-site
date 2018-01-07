@@ -12,6 +12,7 @@ $header-font-family: 'Josefin Sans';
     h1, h2 {
       font-family: $header-font-family;
       color: $alpha-color;
+      text-align: center;
     }
 
     &-button {
@@ -47,16 +48,13 @@ $header-font-family: 'Josefin Sans';
         color: $alpha-color;
         font-weight: bold;
         font-size: 6rem;
-
       }
-
-      }
+    }
 
     &-header {
       .button {
         background-color: $alpha-color;
       }
-
     }
 
     &-question {
@@ -73,6 +71,8 @@ $header-font-family: 'Josefin Sans';
       margin-left: auto;
       margin-right: auto;
       padding: 2rem;
+      border: 4px solid $alpha-color;
+      
       video {
         width: 100%;
       }
@@ -80,6 +80,7 @@ $header-font-family: 'Josefin Sans';
 
   }
   .marketing-site-three-up {
+
     h2 {
       font-size: 2.5rem;
       font-weight: bolder;
@@ -88,10 +89,13 @@ $header-font-family: 'Josefin Sans';
     .fa {
       color: $alpha-color;
     }
-    border-top: 2px solid $alpha-color;
   }
+  .marketing-site-content-section {
+    border: 4px solid $alpha-color;
 
   .marketing-site-content-section-block {
+
+
     h3 {
       font-size: 2rem;
       font-weight: bold;
@@ -101,29 +105,46 @@ $header-font-family: 'Josefin Sans';
       font-size: 1.5rem;
     }
   }
+}
 
   .contact-us-section {
     .contact-us-section-left {
       border-color: $alpha-color;
     }
+
     h1 {
       text-align: center;
       font-weight: bold;
       font-size: 5rem;
       color: $alpha-color;
     }
+
     h2 {
       font-weight: bold;
       font-size: 2rem;
     }
+
     ul {
       list-style-type: none;
       li {
         font-size: 1rem;
       }
     }
-    label {
+
+    label>span {
       font-weight: bold;
+      &::after {
+        font-style: italic;
+        content: ' - Required';
+      }
+
+    }
+
+    .cn-alpha-button {
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      background-color: $alpha-color;
     }
     
   }
