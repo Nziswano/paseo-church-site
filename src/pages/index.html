@@ -16,53 +16,62 @@ site:
     <div class="grid-container">
 
 
-    <section class="cell module parallax parallax-3">
-        <div class="container">
-            <blockquote>For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.<cite>Ephesians 2:8-9</cite></blockquote>
-        </div>
-    </section>
-
-    <section id="services" class="cell module content">
-        <div class="container">
-            {{>paseo-four-up-feature title=paseo.sundayservice.title day=paseo.sundayservice.day
-            time=paseo.sundayservice.time services=paseo.services}}
-        </div>
-    </section>
-
-    <section id="about" class="cell module content">
-        <div class="container">
-            <div class="grid-x grid-margin-x align-stretch">
-                {{#each paseo.about}}
-                <div class="cell small-12 large-4">
-                    <h4><strong>{{this.title}}</strong></h4>
-                    <ul>
-                        {{#each this.items}}
-                        <li>{{this}}</li>
-                        {{/each}}
-                    </ul>
-                </div>
-                {{/each}}
+        <section class="cell module parallax parallax-3">
+            <div class="container">
+                <blockquote>For by grace are ye saved through faith; and that not of yourselves:
+                    it is the gift of God: Not of works, lest any man should boast.
+                    <cite>Ephesians 2:8-9</cite>
+                </blockquote>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cell module parallax parallax-1">
-        <div class="container">
-            <blockquote>For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.<cite>John 3:16</cite></blockquote>
-        </div>
-    </section>
-</div>
+        <section id="services" class="cell module content">
+            <div class="container">
+                {{>paseo-four-up-feature title=paseo.sundayservice.title day=paseo.sundayservice.day
+                    time=paseo.sundayservice.time services=paseo.services}}
+            </div>
+        </section>
+
+        <section id="about" class="cell module content">
+            <div class="container">
+                <div class="grid-x grid-margin-x align-stretch">
+                    {{#each paseo.about}}
+                        <div class="cell small-12 large-4">
+                            <h4>
+                                <strong>{{this.title}}</strong>
+                            </h4>
+                            <ul>
+                                {{#each this.items}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <section class="cell module parallax parallax-1">
+            <div class="container">
+                <blockquote>For God so loved the world, that he gave his only begotten Son,
+                    that whosoever believeth in him should not perish, but have
+                    everlasting life.
+                    <cite>John 3:16</cite>
+                </blockquote>
+            </div>
+        </section>
+    </div>
 </section>
-    <section class="grid-container">
-    <section class="grid-x grid-padding-x cn-alpha">
-            {{>alpha}}
-    </section>
+
+<section class="grid-container cn-alpha" id="cn-alpha">
+    {{>alpha}}
 </section>
-    <section id="contact" class="cell module content">
-        <div class="container">
-            {{>paseo-marketing-site-footer title=paseo.title phone=paseo.phone location=paseo.location
+
+<section id="contact" class="cell module content">
+    <div class="container">
+        {{>paseo-marketing-site-footer title=paseo.title phone=paseo.phone location=paseo.location
             email=paseo.email}}
-        </div>
-    </section>
+    </div>
+</section>
 
 

@@ -1,32 +1,40 @@
-<div class="large-3 cell">
-  <img src="assets/img/alpha/Alpha_course_logo.png" alt="Alpha Logo" />
+<section class="grid-x grid-padding-x cn-alpha-header">
+  <div class="large-3 cell logo">
+    <img src="assets/img/alpha/Alpha_course_logo.png" alt="Alpha Logo" />
   </div>
   <div class="large-9 cell">
-  <div class="content">
-    <h1>The Alpha Course</h1>
-    <div>
-      <span>Starts</span>
-      <h2>18 February 2018</h2>
-      <span>Information Session</span>
-      <h2>4 February 2018</h2>
+    <div class="content">
+      <h1>The Alpha Course</h1>
+      <div>
+        <span>Starts</span>
+        <h2>18 February 2018</h2>
+        <span>Information Session</span>
+        <h2>4 February 2018</h2>
+      </div>
+      <a href="#alpha-signup" class="rounded button">Signup Now!</a>
     </div>
-    <a href="#" class="button">Signup Now!</a>
   </div>
-</div>
-
-<section>
-<h1>What if you could ask GOD one question?</h1>
 </section>
 
-<section>
-{{>alpha-site-three-up}}
+<section class="cn-alpha-question">
+  <h1>What if you could ask GOD one question?</h1>
+</section>
+
+<section class="cn-alpha-work">
+  {{>alpha-site-three-up}}
 </section>
 
 <section>
   {{>alpha-site-content-section}}
 </section>
 
-<section>
+<section class="grid-container cn-alpha-video">
+  <video controls class="cn-alpha-video-item">
+      <source src="https://d3qaw3da7pyv4i.cloudfront.net/alpha/alpha_film_series_trailer_reduced.mp4" type="video/mp4">
+  </video>
+</section>
+
+<section id="alpha-signup">
   {{>alpha-us-section}}
 </section>
   

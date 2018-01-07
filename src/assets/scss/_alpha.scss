@@ -1,0 +1,106 @@
+$alpha-color: #fb321c;
+
+// $hero-height: 60vh;
+// $body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$header-font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+// $font-family-highlight: 'Annie Use Your Telescope', cursive;
+
+.cn-alpha {
+    position: relative;
+    border: 2px solid $alpha-color;
+    h1 {
+      font-family: $header-font-family;
+    }
+
+    &-button {
+      background-color: $alpha-color;
+      font-size: 2rem;
+    }
+
+    .logo {
+      position: relative;
+      top: 5rem;
+      left: 5%;
+    }
+
+    &-header {
+      .button {
+        background-color: $alpha-color;
+      }
+    }
+
+    .content {
+      text-align: center;
+      font-family: $header-font-family;
+
+      span {
+        font-size: 2rem;
+        font-weight: bolder;
+        // color: $alpha-color;
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: $alpha-color;
+      }
+
+      h1 {
+        color: $alpha-color;
+        font-weight: bold;
+        font-size: 6rem;
+
+      }
+
+      }
+
+    &-question {
+      text-align: center;
+      background-color: $alpha-color;
+      color: $white;
+      border-top: 4px solid $alpha-color;
+      border-bottom: 4px solid $alpha-color;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    &-video {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem;
+      video {
+        width: 100%;
+      }
+    }
+
+  }
+  .marketing-site-three-up {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bolder;
+    }
+
+    .fa {
+      color: $alpha-color;
+    }
+  }
+
+  .marketing-site-content-section-block {
+    h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $alpha-color;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contact-us-section {
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 5rem;
+      color: $alpha-color;
+    }
+  }
