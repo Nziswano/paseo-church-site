@@ -9,7 +9,9 @@ $header-font-family: 'Josefin Sans';
     position: relative;
     font-family: $body-font-family;
 
-    h1, h2 {
+    h1,
+    h2,
+    h3 {
       font-family: $header-font-family;
       color: $alpha-color;
       text-align: center;
@@ -119,10 +121,17 @@ $header-font-family: 'Josefin Sans';
       color: $alpha-color;
     }
 
-    h2 {
+    h2,
+    h3 {
       font-weight: bold;
       font-size: 2rem;
       text-align: left;
+    }
+
+    dl {
+      dd {
+        padding-left: 1rem;
+      }
     }
 
     ul {
