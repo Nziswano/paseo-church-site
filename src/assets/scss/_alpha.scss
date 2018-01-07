@@ -2,7 +2,9 @@ $alpha-color: #fb321c;
 
 // $hero-height: 60vh;
 $body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$header-font-family: 'Josefin Sans';
+// $header-font-family: 'Josefin Sans';
+// $question-font-family: 'Archivo Black';
+$header-font-family: 'Archivo Black';
 
 
 .cn-alpha {
@@ -64,8 +66,10 @@ $header-font-family: 'Josefin Sans';
       background-color: $alpha-color;
       width: 100%;
       h1 {
+        font-family: $header-font-family;
         font-size: 3rem;
         color: $white;
+        padding: 1rem;
       }
     }
 

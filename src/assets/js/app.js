@@ -6,6 +6,7 @@ window.$ = $;
 Webfont.load({
   google: {
     families: [
+      "Archivo Black",
       "Merriweather Sans",
       "Nunito",
       "Roboto",
