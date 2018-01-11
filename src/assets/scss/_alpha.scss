@@ -18,8 +18,12 @@ $header-font-family: 'Archivo Black';
       color: $alpha-color;
       text-align: center;
     }
+    
+    h1 {
+      font-size: 4rem;
+    }
 
-    &-button {
+    &-button.button {
       background-color: $alpha-color;
       font-size: 2rem;
     }
@@ -154,11 +158,20 @@ $header-font-family: 'Archivo Black';
 
     }
 
-    .cn-alpha-button {
+    .cn-alpha-button,
+    .contactus-field input.button
+    {
+      color: $white;
       font-weight: bold;
       font-size: 1rem;
       padding: 1rem 2rem;
       background-color: $alpha-color;
+    }
+
+    .contactus-form {
+      label {
+        font-weight: bold;
+      }
     }
     
   }

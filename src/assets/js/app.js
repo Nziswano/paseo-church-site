@@ -18,7 +18,7 @@ Webfont.load({
 });
 
 let siteUrl = "http://localhost:5000/register";
-let captchaKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+let captchaKey = "6LcbXDQUAAAAAITr8nTxKN0mjMbKMKCErVcdcfu5";
 Vue.config.devtools = true;
 
 const app = new Vue({
