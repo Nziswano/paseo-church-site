@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import Vue from 'vue';
-import PaseoContactUs from "paseo_contact_us";
+import ContactUs from "paseo_contact_us";
 import whatInput from 'what-input';
 import * as Webfont from "webfontloader";
 window.$ = $;
@@ -17,19 +17,19 @@ Webfont.load({
   },
 });
 
-
 let siteUrl = "http://localhost:5000/register";
 let captchaKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+Vue.config.devtools = true;
 
 const app = new Vue({
   el: "#contact-form",
-  render: (h) => h(PaseoContactUs, {
+  render: (h) => h(ContactUs, {
     props: {
-      capcha: captchaKey,
+      captcha: captchaKey,
       url: siteUrl,
-    }
-  })
-})
+    },
+  }),
+});
 
 import './lib/foundation-explicit-pieces';
 

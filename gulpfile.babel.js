@@ -117,8 +117,14 @@ let webpackConfig = {
           }
       },
       {
-          test: /\.ts$/,
-          use: 'awesome-typescript-loader'
+          test: /\.tsx?$/,
+          use: [
+            { loader: 'babel-loader' },
+            { loader: 'awesome-typescript-loader',
+              options: {
+                appendTsSuffixTo: [/\.vue$/]
+              } }
+          ]
       },
     {
       test: /.vue$/,
@@ -126,8 +132,10 @@ let webpackConfig = {
       options: {
         loaders: {
           'scss': 'vue-style-loader!css-loader!sass-loader',
-          'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+          'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
+          ts: ['babel-loader', 'awesome-typescript-loader']
         }
+        
       }
     }
   ]
