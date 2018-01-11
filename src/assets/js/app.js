@@ -17,9 +17,16 @@ Webfont.load({
   },
 });
 
-let siteUrl = "http://localhost:5000/register";
+// let siteUrl = "http://localhost:5000/register";
+
+// Live Key
+let siteUrl = "https://xytgyax0eb.execute-api.eu-central-1.amazonaws.com/dev/register";
+
+// let captchaKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+
+// Live key
 let captchaKey = "6LcbXDQUAAAAAITr8nTxKN0mjMbKMKCErVcdcfu5";
-Vue.config.devtools = true;
+// Vue.config.devtools = true;
 
 const app = new Vue({
   el: "#contact-form",
