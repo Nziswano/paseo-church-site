@@ -25,7 +25,7 @@ let siteUrl = "https://xytgyax0eb.execute-api.eu-central-1.amazonaws.com/dev/reg
 // let captchaKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
 
 // Live key
-let captchaKey = "6LcbXDQUAAAAAITr8nTxKN0mjMbKMKCErVcdcfu5";
+let captchaKey = "6LexoEAUAAAAAPle-rGNB_jpvVicORtIny2FiegH";
 // Vue.config.devtools = true;
 
 const app = new Vue({
