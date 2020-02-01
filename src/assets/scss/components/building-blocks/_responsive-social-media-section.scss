@@ -1,4 +1,4 @@
-$highlight: #1d92cf;
+$highlight: #1779ba;
 
 .social-links {
   background: $highlight;
@@ -15,7 +15,7 @@ $highlight: #1d92cf;
     padding-bottom: 1rem;
   }
 
-  @include breakpoint (small only) {
+  @include breakpoint(small only) {
     padding: 2rem 0;
 
     i.fa {
