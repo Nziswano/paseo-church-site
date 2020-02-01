@@ -1,7 +1,7 @@
-import $ from 'jquery';
-import Vue from 'vue';
+import $ from "jquery";
+import Vue from "vue";
 import ContactUs from "paseo_contact_us";
-import whatInput from 'what-input';
+import whatInput from "what-input";
 import * as Webfont from "webfontloader";
 window.$ = $;
 
@@ -13,14 +13,15 @@ Webfont.load({
       "Nunito",
       "Roboto",
       "Josefin Sans"
-  ],
-  },
+    ]
+  }
 });
 
 // let siteUrl = "http://localhost:5000/register";
 
 // Live Key
-let siteUrl = "https://xytgyax0eb.execute-api.eu-central-1.amazonaws.com/dev/register";
+let siteUrl =
+  "https://xytgyax0eb.execute-api.eu-central-1.amazonaws.com/dev/register";
 
 // let captchaKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
 
@@ -30,15 +31,15 @@ let captchaKey = "6LexoEAUAAAAAPle-rGNB_jpvVicORtIny2FiegH";
 
 const app = new Vue({
   el: "#contact-form",
-  render: (h) => h(ContactUs, {
-    props: {
-      captcha: captchaKey,
-      url: siteUrl,
-    },
-  }),
+  render: h =>
+    h(ContactUs, {
+      props: {
+        captcha: captchaKey,
+        url: siteUrl
+      }
+    })
 });
 
-import './lib/foundation-explicit-pieces';
+// import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
-
