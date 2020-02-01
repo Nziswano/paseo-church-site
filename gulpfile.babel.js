@@ -13,19 +13,6 @@ import webpackStream from "webpack-stream";
 import webpack2 from "webpack";
 import named from "vinyl-named";
 
-// const plugins = require("gulp-load-plugins");
-// const yargs = require("yargs");
-// const browser = require("browser-sync");
-// const gulp = require("gulp");
-// const panini = require("panini");
-// const rimraf = require("rimraf");
-// const sherpa = require("style-sherpa");
-// const yaml = require("js-yaml");
-// const fs = require("fs");
-// const webpackStream = require("webpack-stream");
-// const webpack2 = require("webpack");
-// const named = require("vinyl-named");
-
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
@@ -111,11 +98,7 @@ function sass() {
           includePaths: PATHS.sass
         }).on("error", $.sass.logError)
       )
-      .pipe(
-        $.autoprefixer({
-          browsers: COMPATIBILITY
-        })
-      )
+
       // Comment in the pipe below to run UnCSS in production
       //.pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
       .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: "ie9" })))
