@@ -1,0 +1,71 @@
+<section class="contact-us-section">
+  <div class="row medium-unstack">
+    <div class="columns contact-us-section-left">
+      <h1 class="contact-us-header">Join Us</h1>
+      <div>
+        <h2>Course Details</h2>
+        <dl>
+          <dt>Date:</dt>
+          <dd>{{event.date}}</dd>
+          <dt>Time:</dt>
+          <dd>{{event.time}}</dd>
+          <dt>Cost:</dt>
+          <dd>{{event.cost}}</dd>
+          <dt>Location:</dt>
+          <dd>{{event.location}}</dd>
+        </dl>
+      </div>
+
+      <div class="cn-alpha-our-contacts">
+        <h3>Contact Information</h3>
+        <dl>
+          <dt>Email:</dt>
+          <dd><a href="mailto:info@paseo.org.za">info@paseo.org.za</a><br/>
+          <a href="mailto:{{event.contact_info.email}}">{{event.contact_info.email}}</a>
+          </dd>
+          <dt>Phone:</dt>
+        <dd><span>+27 71 103 2694</span><br/><span>{{event.contact_info.cell}}</span></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="columns contact-us-section-right">
+      <h1 class="contact-us-header">Sign Up</h1>
+      <div id="contact-form">
+      <form class="contact-us-form js-alpha-contact-form">
+        <div class="grid-x grid-padding-x">
+          <div class="medium-10 medium-offset-2 cell">
+            <label><span>Full Name</span>
+              <input type="text" id="alpha-name" placeholder="Full Name">
+            </label>
+          </div>
+          <div class="medium-10 medium-offset-2 cell">
+            <label><span>Postal Code</span>
+              <input type="text" id="alpha-postal-code" placeholder="Postal Code">
+            </label>
+          </div>
+          <div class="medium-10 medium-offset-2 cell">
+            <label><span>Mobile Number</span>
+              <input type="tel" id="alpha-mobile-phone" placeholder="Mobile Number">
+            </label>
+          </div>
+          <div class="medium-10 medium-offset-2 cell">
+            <label><span>Email</span>
+              <input type="email" id="alpha-email" placeholder="Email">
+            </label>
+          </div>
+          <div class="medium-10 medium-offset-2 cell">
+              <label><span>Age</span>
+                <input type="number" id="alpha-age" placeholder="Age">
+              </label>
+            </div>
+          <div class="medium-8 medium-offset-4 cell">
+            <div class="input-group-button">
+                <input type="submit" class="button large rounded cn-alpha-button" value="Submit">
+              </div>
+            </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
