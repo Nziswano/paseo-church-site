@@ -22,6 +22,14 @@
 1. Deployed to firebase using **johan@paseo.org.za**
 1. Code on github
 
-## Partials Used
+## To Deploy
 
-\*
+- Deployed on [Google firebase](https://console.firebase.google.com/)
+- Using account **johan@paseo.org.za**
+- To deploy
+
+```bash
+firebase logout
+firebase login
+firebase deploy
+```
