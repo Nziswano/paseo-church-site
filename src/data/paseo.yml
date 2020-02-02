@@ -57,11 +57,32 @@ other-services:
     link: info
 events:
   -
-    title: "Vacation Bible School"
-    date: "10 July 2017 - 15 July 2017"
-    time: "10h00"
-    img: "/assets/img/slide/vacation_bible_school1.jpg"
-    link: vacation-bible-school
+    title: "Youth Leadership Training"
+    subtitle: "Transforming and Developing Leaders"
+    byline: "Go ye therefore and make disciples of all the nations - Matthew 28:19"
+    description: "If you have a passion for youth and desire to see young people evolve into godly, confident leaders with strong biblical purpose, then do not miss out on this exciting course!
+    Come and join us in discovering biblical truths and contempary methods of impacting our youth within our churches and communities."
+    keys:
+      - "Passion for Youth Ministry"
+      - "Purpose of Youth Ministry"
+      - "Process of Youth Ministry"
+      - "Product of Youth Ministry"
+    audience: "Youth pastors, leaders, workers. Anyone who is passionate about working with or in the youth environment."
+    date: "15th and 22nd February 2020"
+    time: "15h00 to 18h30"
+    location: "Paseo Baptist Church, 32 St. Francis Street, Klipspruit West Ext 2"
+    cost: "R100,00 per person including training material"
+    action: "Register now!"
+    facilitator:
+      name: "Bafana Mohale"
+      bio: "Bafana Mohale has been involved in Youth Ministry for over 20 years and in leadership positions for the past 15.
+      He has obtained his Honours in Education and Theology and is very passionate about bringing hope, through the gospel, to the youth of South Africa.
+      Currently, he is an Educator and Youth Pastor at Lamb of God Ministries in Kliptown, South Africa.
+      Bafana is happily married with 3 children and enjoyes sports, reading, and camping."
+    contact_info:
+      name: "Bafana Mohale"
+      cell: "+27 83 513 8484"
+      email: "bfan4me@gmail.com"
 about:
   -
     id: about-1
