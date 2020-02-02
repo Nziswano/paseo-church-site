@@ -2,10 +2,15 @@
   <section class="cn-alpha-question">
     <h1>{{event.title}}</h1>
   </section>
-  <div class="large-3 cell logo">
-    <p>{{event.description}}</p>
+  <section class="cn-alpha content">
+      <p class=>{{event.description}}</p>
+  </section>
+  <section class="grid-x grid-padding-x">
+  <div class="large-4 cell cn-alpha content">
+    {{>event-bio}}
   </div>
-    <div class="large-9 cell">
+
+    <div class="cell large-8">
       <div class="content">
         <!-- <span>{{event.byline}}</span> -->
         <div>
@@ -17,20 +22,13 @@
         <a href="#alpha-signup" data-smooth-scroll class="rounded button cn-alpha-button">Signup Now!</a>
       </div>
   </div>
+  </section>
 </section>
 <section>
   {{>event-content keys=event.keys audience=event.audience}}
 </section>
 
-<section class="cn-alpha-work">
-  <h2>Facilitator</h2>
-  <dl>
-  <dt>Name:</dt>
-  <dd>{{event.facilitator.name}}</dd>
-  <dt>About:</dt>
-  <dd>{{event.facilitator.bio}}</dd>
-</dl>
-</section>
+
 
 <section id="alpha-signup">
   {{>event-us-section event=event}}
