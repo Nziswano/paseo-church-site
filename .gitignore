@@ -96,3 +96,4 @@ package-lock.json
 !scss
 
 /vendor/
+.firebase
