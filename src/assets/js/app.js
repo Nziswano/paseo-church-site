@@ -1,5 +1,7 @@
 import $ from "jquery";
 import Vue from "vue";
+import Foundation from "foundation-sites";
+// import { Foundation } from "foundation-sites/js/foundation.core";
 import ContactUs from "paseo_contact_us";
 import whatInput from "what-input";
 import * as Webfont from "webfontloader";
@@ -40,6 +42,7 @@ const app = new Vue({
     })
 });
 
-import "./lib/foundation-explicit-pieces";
+// import "./lib/foundation-explicit-pieces";
+// require("./lib/foundation-explicit-pieces");
 
 $(document).foundation();
